@@ -1,2 +1,2 @@
 # obsidian-theme-dark
-Dark Obsidian theme
+Dark [Obsidian](https://obsidian.md) theme
