@@ -81,14 +81,23 @@
 
 body
 {
+    --inline-title-size: 1.35rem;
+    --h1-size: 1.5rem;
+    --h2-size: 1.2rem;
+    --h3-size: 1.1rem;
+    --h4-size: 1.0rem;
+    --h5-size: 1rem;
+    --h6-size: 0.9rem; 
+
     --accent-h: 12; /* --faded-red #9d0006 */
     --accent-s: 107%;
     --accent-l: 32%;
-
+/*
     --link-decoration:                none;
     --link-decoration-hover:          none;
     --link-external-decoration:       none;
     --link-external-decoration-hover: none;
+*/
 
     --tag-decoration:                 none;
     --tag-decoration-hover:           underline;
@@ -305,6 +314,41 @@ body
     --dataview-key-background:       rgba(var(--faded-red_x), 0.3);
     --dataview-value:                var(--text-faint);
     --dataview-value-background:     rgba(var(--neutral-green_x), 0.2);
+}
+/*
+div.cm-line:not(.HyperMD-header):not(.HyperMD-codeblock):not(.HyperMD-list-line)
+{
+    margin-bottom: 1em !important;
+}
+*/
+/*
+div.HyperMD-list-line.cm-line
+{
+    margin-bottom: 0.2em !important;
+}
+*/
+
+h1, .markdown-rendered h1,
+div.HyperMD-header.HyperMD-header-1.cm-line
+{
+    margin-top: 0.6em !important;
+    margin-bottom: 0.2em !important;
+}
+
+h2, .markdown-rendered h2,
+div.HyperMD-header.HyperMD-header-2.cm-line
+{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.14em !important;
+}
+
+h3,.markdown-rendered h3, .HyperMD-header.HyperMD-header-3.cm-line,
+h4,.markdown-rendered h4, .HyperMD-header.HyperMD-header-4.cm-line,
+h5,.markdown-rendered h5, .HyperMD-header.HyperMD-header-5.cm-line,
+h6,.markdown-rendered h6, .HyperMD-header.HyperMD-header-6.cm-line
+{
+    margin-top: 0.2em !important;
+    margin-bottom: 0.07em;
 }
 
 table
